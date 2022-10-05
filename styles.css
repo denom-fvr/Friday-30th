@@ -610,7 +610,14 @@
     padding: 10px;
     width: 100%;
   }
+
+
 }
+
+
+
+
+
 
 /*TECH SECTION*/
 
@@ -692,67 +699,198 @@
 
 /*ABOUT SECTION*/
 
-.presentation {
-  display: flex;
-  width: 100%;
-  margin: auto;
-  min-height: 80vh;
-  align-items: center;
-  background: #082231;
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #082231;
+  padding: 0;
+  margin: 0;
+}
+.container{
+	width: 100%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+} 
+.content-section{
+	float: left;
+	width: 50%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 30px;
 }
 
-.introduction {
-  flex: 1;
-}
-
-.intro-text h1 {
-  font-size: 45px;
-  font-weight: bold;
-  background: linear-gradient(to right, #494964, #6f6f89);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.intro-text p {
-  margin-top: 5px;
-  font-size: 22px;
+ .content-section .content .title {
   color: #fff;
-  line-height: 50px;
+
 }
 
-.cta {
-  padding: 50px 0px 0px 0px;
+.content-section .content h3{
+	margin-top: 20px;
+	color:#fff;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+  color: #fff; 
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #a52a2a;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	color:#fff;
 }
 
-.cta-select {
-  border: 2px solid #f77062;
-  background: transparent;
-  color: #f77062;
-  width: 150px;
-  height: 50px;
-  cursor: pointer;
-  font-size: 16px;
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 30px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
 }
 
-.cta-add {
-  background: #c36cbb;
-  width: 150px;
-  height: 50px;
-  cursor: pointer;
-  font-size: 16px;
-  border: none;
+}
+
+
+
+.about {
+  background-color: #082231;
+}
+
+
+.about-1 {
+  margin: 30px;
+  padding: 5px; 
+}
+
+.about-1 h1{
+  text-align: center;
   color: white;
-  margin: 30px 0px 0px 50px;
+  font-weight: bold;
 }
 
-.cover {
-  flex: 1;
+
+/*===========================
+adding style to about items 
+============================*/
+
+.about-item{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #082231;
+  padding: 80px 30px;
+  box-shadow: 0 0 9px rgba(0,0,0.6);
 }
 
-.cover img {
-  height: 80vh;
-  width: 100%;
-  background-size: contain;
-  position: relative;
-  filter: drop-shadow(0px 5px 3px black);
+/*======================================
+adding style to the icons(book,globe,pencil)
+=========================================*/
+.about-item i{
+  font-size: 43px;
+  margin: 0;
+}
+
+/*======================================
+adding style to h3(heading 3) of each item 
+=========================================*/
+.about-item h3{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/*======================================
+styling the hr (the blue line in between)
+=========================================*/
+.about-item hr{
+  width: 46px;
+  height: 3px;
+  background-color: #082231;
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+}
+
+/*========================================
+hover means when you put your cursor over it
+=========================================*/
+.about-item:hover{
+  background-color: #b9bb46;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+  color: #fff;
+}
+.about-item:hover hr{
+  background-color: #fff;
+}
+
+/*==============================================================================
+translate Y: move along the Y axis, negative(-20) moves it up, while positive(20) moves in down by  
+================================================================================*/
+.about-item:hover i{
+  transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+  transition: all 400ms ease-in-out;
+}
+
+footer{
+  background: #212226;
+  padding: 20px;
+}
+footer p{
+  color: #fff;
 }
