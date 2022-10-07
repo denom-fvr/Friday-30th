@@ -807,16 +807,19 @@
   background-color: #082231;
 }
 
-
-.about-1 {
+.about-1{
   margin: 30px;
-  padding: 5px; 
+  padding: 5px;
 }
-
 .about-1 h1{
   text-align: center;
-  color: white;
+  color: black;
   font-weight: bold;
+}
+.about-1 p{
+  text-align: center;
+  padding: 3px;
+  color: #fff;
 }
 
 
