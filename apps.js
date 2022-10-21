@@ -91,7 +91,15 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
+    else if(message.includes('open facebook')) {
+        window.open("https://facebook.com", "_blank");
+        const finalText = "Opening facebook";
+        speech.text = finalText;
+    }
+
+
+
+      else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what i found on internet regarding " + message;
         speech.text = finalText;
@@ -126,6 +134,8 @@ function speakThis(message) {
         const finalText = "I found some information for " + message + " on google";
         speech.text = finalText;
     }
+
+    
 
     speech.volume = 1;
     speech.pitch = 1;
