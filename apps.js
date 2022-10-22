@@ -102,7 +102,7 @@ function speakThis(message) {
         const finalText = "Opening twitter";
         speech.text = finalText;
 
-
+    }
 
       else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
@@ -131,6 +131,12 @@ function speakThis(message) {
     else if(message.includes('calculator')) {
         window.open('Calculator:///')
         const finalText = "Opening Calculator";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('Whatsapp')) {
+        window.open('Whatsapp:///')
+        const finalText = "Opening Whatsapp";
         speech.text = finalText;
     }
 
