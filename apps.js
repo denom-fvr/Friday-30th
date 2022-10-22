@@ -97,6 +97,11 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('open twitter')) {
+        window.open("https://twitter.com", "_blank");
+        const finalText = "Opening twitter";
+        speech.text = finalText;
+
 
 
       else if(message.includes('what is') || message.includes('who is') || message.includes('what are')) {
