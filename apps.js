@@ -79,6 +79,11 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('what are you')) {
+        const finalText = "I am Kekuda a virtual assistant how can I help you";
+        speech.text = finalText;
+    }
+
     else if(message.includes('open google')) {
         window.open("https://google.com", "_blank");
         const finalText = "Opening Google";
