@@ -134,7 +134,7 @@ function speakThis(message) {
   } else if (message.includes("orange money")) {
     window.open("Orange Money:///");
     const finalText = "Opening OrangeMoney";
-    speech.text = finalText;
+    speech.text = finalText; 
   } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
