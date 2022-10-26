@@ -69,9 +69,15 @@ function speakThis(message) {
     const finalText = "My name is Kekuda";
     speech.text = finalText;
   } else if (message.includes("what are you")) {
-    const finalText = "I am Kekuda a virtual assistant how can I help you";
+    const finalText = "I am Kekuda a Virtual Assistant how can I help you";
     speech.text = finalText;
-  } else if (message.includes("open google")) {
+  } 
+  else if (message.includes("what do you want to do")) {
+    const finalText = "I want to assist you boss";
+    speech.text = finalText;
+  }
+  
+  else if (message.includes("open google")) {
     window.open("https://google.com", "_blank");
     const finalText = "Opening Google";
     speech.text = finalText;
@@ -127,15 +133,13 @@ function speakThis(message) {
     window.open("Calculator:///");
     const finalText = "Opening Calculator";
     speech.text = finalText;
-  } else if (message.includes("whatsApp")) {
+  } c
+  else if (message.includes("whatsApp")) {
     window.open("WhatsApp:///");
     const finalText = "Opening WhatsApp";
     speech.text = finalText;
-  } else if (message.includes("orange money")) {
-    window.open("Orange Money:///");
-    const finalText = "Opening OrangeMoney";
-    speech.text = finalText; 
-  } else {
+  } 
+  else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
