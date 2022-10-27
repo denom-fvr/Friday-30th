@@ -71,8 +71,16 @@ function speakThis(message) {
   } else if (message.includes("what are you")) {
     const finalText = "I am a Virtual Assistant how can I help you";
     speech.text = finalText;
-
-   } else if (message.includes("open google")) {
+  } else if (message.includes("what is your name")) {
+    const finalText = "My name is Kekuda";
+    speech.text = finalText;
+  } else if (message.includes("what can you do")) {
+    const finalText = "I can do whatever u want boss";
+    speech.text = finalText;
+  } else if (message.includes("why were you built")) {
+    const finalText = "I was built to serve your needs boss ";
+    speech.text = finalText;
+  } else if (message.includes("open google")) {
     window.open("https://google.com", "_blank");
     const finalText = "Opening Google";
     speech.text = finalText;
@@ -88,16 +96,17 @@ function speakThis(message) {
     window.open("https://twitter.com", "_blank");
     const finalText = "Opening twitter";
     speech.text = finalText;
-  } else if (message.includes("open snapchat")) {
-    window.open("https://snapchat.com", "_blank");
-    const finalText = "Opening snapchat";
+  } else if (message.includes("open Orangesl")) {
+    window.open("https://www.orange.sl", "_blank");
+    const finalText = "Opening Orangesl";
     speech.text = finalText;
   } else if (
     message.includes("what is") ||
     message.includes("who is") ||
     message.includes("what are")
   ) {
-    window.open(      `https://www.google.com/search?q=${message.replace(" ", "+")}`,
+    window.open(
+      `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
     );
     const finalText = "This is what i found on internet regarding " + message;
@@ -127,13 +136,7 @@ function speakThis(message) {
     window.open("Calculator:///");
     const finalText = "Opening Calculator";
     speech.text = finalText;
-  } 
-  else if (message.includes("whatsApp")) {
-    window.open("WhatsApp:///");
-    const finalText = "Opening WhatsApp";
-    speech.text = finalText;
-  } 
-  else {
+  } else {
     window.open(
       `https://www.google.com/search?q=${message.replace(" ", "+")}`,
       "_blank"
@@ -148,5 +151,3 @@ function speakThis(message) {
 
   window.speechSynthesis.speak(speech);
 }
-
-("//how to get data in javascript?");
