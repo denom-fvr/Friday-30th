@@ -96,10 +96,10 @@ function speakThis(message) {
     window.open("https://twitter.com", "_blank");
     const finalText = "Opening twitter";
     speech.text = finalText;
-  } else if (message.includes("open Orangesl")) {
+  } else if (message.includes("open orangesl")) {
     window.open("https://www.orange.sl", "_blank");
-    const finalText = "Opening Orangesl";
-    speech.text = finalText;
+    const finalText = "Opening orangesl";
+    speech.text = finalText; 
   } else if (
     message.includes("what is") ||
     message.includes("who is") ||
