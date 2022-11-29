@@ -99,7 +99,7 @@ function speakThis(message) {
   } else if (message.includes("open orangesl")) {
     window.open("https://www.orange.sl", "_blank");
     const finalText = "Opening orangesl";
-    speech.text = finalText; 
+    speech.text = finalText;
   } else if (
     message.includes("what is") ||
     message.includes("who is") ||
@@ -151,4 +151,3 @@ function speakThis(message) {
 
   window.speechSynthesis.speak(speech);
 }
-
